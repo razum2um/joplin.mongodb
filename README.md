@@ -1,7 +1,7 @@
 # joplin.mongodb
 
 ```
-[joplin.mongodb "0.1.0"]
+[joplin.mongodb "0.1.1"]
 ```
 
 ## Usage

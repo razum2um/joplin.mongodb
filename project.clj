@@ -1,4 +1,4 @@
-(defproject joplin.mongodb "0.1.0"
+(defproject joplin.mongodb "0.1.1"
   :description "MongoDB support for Joplin"
   :url "https://github.com/razum2um/joplin.mongodb"
   :license {:name "Eclipse Public License"
