@@ -86,4 +86,4 @@
   `(let [uri# (:uri ~expr)]
      (with-connection uri#
        (fn [~'db]
-         (as-> ~name ~'db ~@forms)))))
+         (as-> ~'db ~name ~@forms)))))
