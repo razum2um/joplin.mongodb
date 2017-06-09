@@ -76,3 +76,14 @@
 
 (defmethod create-migration :mongodb [target id & args]
   (do-create-migration target id "joplin.mongodb.database"))
+
+;; ============================================================================
+;; Migration interface
+
+(defmacro as-db->
+  "Like as-> but threads database connection"
+  [expr name & forms]
+  `(let [uri# (:uri ~expr)]
+     (with-connection uri#
+       (fn [~'db]
+         (as-> ~name ~'db ~@forms)))))
