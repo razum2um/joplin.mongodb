@@ -6,7 +6,7 @@
 
 ## Usage
 
-Write joplin config with `:type :mongodb :uri "..." :collection "..."`
+Write [joplin](https://github.com/juxt/joplin) config with `:type :mongodb :uri "..." :collection "..."`
 
 ```
 {:databases
